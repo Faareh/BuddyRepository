@@ -2,21 +2,25 @@ import java.util.ArrayList;
 
 public class AddressBook {
 
-    private final ArrayList<BuddyInfo> buddyArr;
+    private ArrayList bookArr;
 
-    public AddressBook(ArrayList<BuddyInfo> buddyArr) {
-        this.buddyArr = buddyArr;
+    public AddressBook() {
+        this.bookArr = new ArrayList();
     }
 
     public void addBuddy(BuddyInfo buddy){
-        this.buddyArr.add(buddy);
+        this.bookArr.add(buddy);
     }
 
     public void removeBuddy(BuddyInfo buddy){
-        this.buddyArr.remove(buddy);
+        this.bookArr.remove(buddy);
     }
 
     public static void main(String[] args) {
         System.out.println("Address Book");
+        BuddyInfo buddy = new BuddyInfo("Tom","Carleton","613");
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 }
