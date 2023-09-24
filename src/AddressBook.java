@@ -28,5 +28,6 @@ public class AddressBook {
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(0);
         System.out.println("New change to push");
+        System.out.println("Changed on Github")
     }
 }
