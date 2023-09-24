@@ -33,5 +33,6 @@ public class AddressBook {
         addressBook.removeBuddy(0);
         System.out.println("New change to push");
         System.out.println("Changed on Github");
+        System.out.println("Last change");
     }
 }
