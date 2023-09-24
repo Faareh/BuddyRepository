@@ -27,6 +27,6 @@ public class AddressBook {
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(0);
-        System.out.println("New change");
+        System.out.println("New change to push");
     }
 }
